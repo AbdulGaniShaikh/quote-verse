@@ -41,7 +41,7 @@ const Thread = (props) => {
           <div className="relative share-button-div nav-icon">
             <img src={share} alt="" className="action-icon" />
             <div className="absolute bottom-full left-1/2 share-buttons">
-              <ShareButtons />
+              <ShareButtons _id={_id} quote={content} />
             </div>
           </div>
         </div>

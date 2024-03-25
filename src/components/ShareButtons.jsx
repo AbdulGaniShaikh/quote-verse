@@ -7,8 +7,8 @@ import {
   WhatsappShareButton
 } from 'react-share';
 
-const ShareButtons = ({ quote }) => {
-  const shareUrl = window.location.href;
+const ShareButtons = ({ _id, quote }) => {
+  const shareUrl = `${window.location.origin}/threads/${_id}`;
   return (
     <div className="flex darkBg border border-borderColor rounded-md overflow-hidden">
       <FacebookShareButton url={shareUrl} quote={quote}>
